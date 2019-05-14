@@ -10,7 +10,6 @@ with pkgs; mkShell {
         if [ ! -d xgboost/ ]; then
             git clone \
                 --recursive \
-                --branch v0.82 \
                 https://github.com/dmlc/xgboost
             cd xgboost/
             make -j4
